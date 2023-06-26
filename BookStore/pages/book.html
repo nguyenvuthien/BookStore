@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/pages/book.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Menu-->
+    <div class="menu">
+        <!--Logo-->
+        <div id="logo">
+            <div class="icon-bar">
+
+            </div>
+            <div class="icon-puzzle">
+
+            </div>
+        </div>
+        <!--Menu item-->
+        <div id="menu-content">
+            <div class="menu-item">
+                <div class="menu-item-icon"></div>
+                <div class="menu-item-text">Danh mục sách</div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-icon2"></div>
+                <div class="menu-item-text">Tìm kiếm</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-header"></div>
+        <div class="content-body">
+            <div class="page-title">
+                <h1>Danh mục sách</h1>
+            </div>
+            <div class="grid-content">
+                <div class="grid-header">
+                    <div class="toolbar">
+                        <button id="btnAdd"><i class="icon-btn-add"></i>Thêm</button>
+                        <button id="btnSua"><i class="icon-btn-cus"></i>Sửa</button>
+                        <button id="btnXoa"><i class="icon-btn-del"></i>Xóa</button>
+                    </div>
+                    <div class="search-input">
+                        <input class="txtSearch" placeholder="Tìm kiếm..." type="text" />
+                    </div>
+                </div>
+                <div class="grid">
+                    <table id="tbBookList" border="1" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th>Mã sách</th>
+                                <th>Tên sách</th>
+                                <th>Tác giả</th>
+                                <th>Giá</th>
+                                <th>Thể loại</th>
+                                <th>Nhà xuất bản</th>
+                                <th>Số lượng</th>
+                                <th>Ngày tạo</th>
+                                <th>Ngày sửa</th>
+                                <th>isDeleted</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging">
+                    <div class="pagination_section">
+                        <a class="active" href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Dialog chi tiet thong tin-->
+    <div class="dialog-modal">
+
+    </div>
+    <div class="dialog">
+        <div class="dialog-title">
+            <div class="title-text">
+                Thông tin sách
+            </div>
+            <div class="title-close-btn">
+
+            </div>
+        </div>
+        <div class="dialog-body">
+            <!--<div class="row">
+                <label>Mã sách</label>
+                <input type="text" />
+            </div>-->
+            <div class="row">
+                <label>Tên sách (*)</label>
+                <input id="txtBookName" required type="text"/>
+            </div>
+            <div class="row">
+                <label>Tác giả (*)</label>
+                <input id="txtAuthor" required type="text" />
+            </div>
+            <div class="row">
+                <label>Giá (*)</label>
+                <input id="txtPrice" required type="number" />
+            </div>
+            <div class="row">
+                <label>Thể loại (*)</label>
+                <select class="opt-TheLoai">
+                </select>
+            </div>
+            <div class="row">
+                <label>Nhà xuất bản (*)</label>
+                <select class="opt-NXB">
+                </select>
+            </div>
+            <div class="row">
+                <label>Số lượng (*)</label>
+                <input id="txtMount" required type="number" />
+            </div>
+        </div>
+        <div class="dialog-footer">
+            <button id="btnOK">OK</button>
+            <button id="btnHuy">Hủy</button>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.3.min.js"></script>
+    <script src="../js/book.js"></script>
+</body>
+</html>
